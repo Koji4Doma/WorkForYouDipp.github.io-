@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WFY</title>
+  <style>
+    /* Общие стили */
+    body {
+      font-family: Courier, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px; /* Уменьшил отступы для мобильных */
+      background-color: #000000;
+      color: #ffffff; /* Изменил цвет текста */
+    }
+
+    .logo {
+      font-size: 20px; /* Уменьшил размер логотипа */
+    }
+
+    nav ul {
+      list-style-type: none;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 10px; /* Уменьшил отступы между пунктами меню */
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .main-content {
+      text-align: center;
+      padding: 30px 0; /* Уменьшил отступы */
+    }
+
+    .title h1 {
+      border: 2px solid #000000;
+      padding: 10px 20px;
+      display: inline-block;
+      font-size: 24px; /* Увеличил размер заголовка */
+    }
+
+    .blocks {
+      display: flex;
+      flex-wrap: wrap; /* Добавил перенос блоков на новую строку */
+      justify-content: center; /* Выравнивание по центру */
+      margin-top: 30px; /* Уменьшил отступ сверху */
+    }
+
+    .block {
+      width: 45%; /* Уменьшил ширину блоков для мобильных */
+      margin-bottom: 20px; /* Увеличил отступ между блоками */
+    }
+
+    .block img {
+      width: 100%;
+    }
+
+    footer {
+      background-color: #000000;
+      color: #fff;
+      padding: 10px; /* Уменьшил отступы */
+      text-align: center;
+    }
+
+    .social-icons {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .social-icons li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    .social-icons li img {
+      width: 30px; /* Уменьшил размер иконок социальных сетей */
+      height: 30px;
+    }
+
+    /* Дополнительные стили */
+    .image-block {
+      width: 80%; /* Увеличил ширину блока с изображением */
+      margin: 0 auto; /* Центрирование */
+      margin-top: 30px; /* Уменьшил отступ сверху */
+      position: relative; /* Добавил позиционирование для оверлея */
+    }
+
+    .image-block img {
+      width: 100%;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      padding: 10px; /* Уменьшил отступы */
+      text-align: center;
+    }
+
+    /* Медиа-запросы */
+    @media screen and (max-width: 768px) {
+      header {
+        padding: 10px 5px; /* Уменьшил отступы */
+      }
+
+      .logo {
+        font-size: 18px; /* Уменьшил размер логотипа */
+      }
+
+      nav ul li {
+        margin-right: 5px; /* Уменьшил отступы между пунктами меню */
+      }
+
+      .main-content {
+        padding: 20px 0; /* Уменьшил отступы */
+      }
+
+      .title h1 {
+        font-size: 20px; /* Уменьшил размер заголовка */
+      }
+
+      .blocks {
+        margin-top: 20px; /* Уменьшил отступ сверху */
+      }
+
+      .block {
+        width: 100%; /* Изменил ширину блоков на 100% для одного в строке */
+      }
+
+      .social-icons li img {
+        width: 25px; /* Уменьшил размер иконок социальных сетей */
+        height: 25px;
+      }
+
+      .image-block {
+        width: 90%; /* Увеличил ширину блока с изображением */
+        margin-top: 20px; /* Уменьшил отступ сверху */
+      }
+
+      .overlay {
+        padding: 5px; /* Уменьшил отступы */
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html" class="main-button">Главная</a></li>
+        <li><a href="Untitled-1.html" class="other-button">Каталог</a></li>
+        <li><a href="Контакты.html" class="other-button">Контакты</a></li>
+        <li><a href="Клиентам.html" class="other-button">Клиентам</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="main-content">
+    <div class="title">
+      <h1>WorkForYou</h1>
+    </div>
+
+    <div class="blocks">
+      <div class="block">
+        <img src="block-55.png" alt="Block 1">
+        <h2>Заголовок блока 1</h2>
+        <p>Описание блока 1</p>
+      </div>
+      <div class="block">
+        <img src="block-44.png" alt="Block 2">
+        <h2>Заголовок блока 2</h2>
+        <p>Описание блока 2</p>
+      </div>
+    </div>
+
+    <div class="image-block">
+      <img src="5356a091a2adaf64be1239127ee85676.png" alt="Your Image">
+      <div class="overlay">
+        <!-- Содержимое вашего блока -->
+        <h2>Название вашего блока</h2>
+        <p>Описание вашего блока</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <ul class="social-icons">
+      <li><a href="#"><img src="vk.png" alt="VK"></a></li>
+      <li><a href="#"><img src="telega.png" alt="Telegram"></a></li>
+    </ul>
+  </footer>
+</body>
+</html>
